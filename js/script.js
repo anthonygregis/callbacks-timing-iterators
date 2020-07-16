@@ -56,3 +56,23 @@ subtractNumbers = (num1, num2) => {
 }
 
 console.log(calculator(5, 77, addNumbers, subtractNumbers))
+
+superHero = (heroName, callbackOne, callbackTwo) => {
+    let superPowers = heroName + callbackOne + callbackTwo
+
+    return superPowers
+}
+
+superPower1 = power => {
+    let superPowerString = (" has the ability to " + power)
+
+    return superPowerString
+}
+
+superPower2 = power => {
+    let superPowerString = (" and has the ability to " + power)
+
+    return superPowerString
+}
+
+console.log(superHero("Rome", superPower1("shoot lasers"), superPower2("fly")))

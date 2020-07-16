@@ -90,9 +90,11 @@ blastOff = () => {
 setTimeout(blastOff, 5000)
 
 printMyName = (name) => {
-    let myName = "My name is " + name;
+    let myName = "My name is anthony";
 
     console.log(myName)
 }
 
-setTimeout(printMyName("Anthony"), 5000)
+setTimeout(() => {
+    printMyName("Anthony")
+}, 5000)

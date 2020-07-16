@@ -76,3 +76,23 @@ superPower2 = power => {
 }
 
 console.log(superHero("Rome", superPower1("shoot lasers"), superPower2("fly")))
+
+blastOff = () => {
+    let num = 0;
+
+    for (let i = 10; i >= num; i--) {
+        console.log(i);
+    }
+
+    console.log("Blast off!!!!")
+}
+
+setTimeout(blastOff, 5000)
+
+printMyName = (name) => {
+    let myName = "My name is " + name;
+
+    console.log(myName)
+}
+
+setTimeout(printMyName("Anthony"), 5000)
